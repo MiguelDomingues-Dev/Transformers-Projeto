@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Transformers";
+  src: url(font/transfrm.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: "Transformers";
+}
+
+body {
+  font-family: "Transformers";
+  background-attachment: fixed;
+  background-size: auto;
+  background-image: url(../img/optimus.jpg);
+}
+
+.master {
+
+  border-radius: 10px;
+}

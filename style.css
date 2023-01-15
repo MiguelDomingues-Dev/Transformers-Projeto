@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*---Font-Transformers---*/
+@font-face {
+  font-family: "Transformers";
+  src: url(font/transfrm.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(19, 26, 64);
+  margin: 25px 35px 25px 35px;
+  padding: 10px;
+}
+
+/*---div-h1---*/
+
+.titulo {
+  font-family: "Transformers", Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: linear-gradient(45deg,rgb(78, 100, 166), hsl(220, 53%, 68%));
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 25px 35px 25px 35px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.99);
+  border-radius: 5px;
+}
+
+.titulo:hover {
+  color: rgb(112, 0, 250);
+  text-shadow: 5px 5px 10px black;
+}
+
+/*---section---*/
+
+#temas {
+  font-weight: bold;
+  margin: 25px 35px 25px 35px;
+  padding: 2px;
+}
+
+
+.subtitulo {
+  padding-bottom: 10px;
+  margin: 25px 35px 25px 35px;
+  font-family: "Transformers";
+  text-decoration: none;
+}
+
+.subtitulo {
+  padding: 12px;
+  margin: 25px 35px 25px 35px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #035AA6, #91BBF2);
+}
+.subtitulo > li {
+  display: none;
+}
+
+.subtitulo:hover > li {
+  display: block;
+}
+.buunblebee:visited {
+  color: rgb(112, 0, 250);
+  text-shadow: 1px 1px 2px white;
+}
+.buunblebee:hover {
+  color: rgb(110, 141, 203);
+  text-shadow: 1px 1px 3px white;
+}
+.buunblebee {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Transformers";
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  padding: 12px;
+  margin: 10;
+}
+
+/*-rodapé-*/
+
+#rodapé {
+   border-radius: 15px;
+   padding-top: 10px;
+   margin: auto;
+   height: 2.5em;
+   background-color: rgb(25, 24, 24);
+   color: aliceblue;
+    text-align: center;
+   font: normal 13px "Transformers"
+}
+
+#rodapé:hover {
+  color: rgb(34, 34, 34);
+  background-color: rgb(112, 0, 250);
+  text-shadow: 1px 1px 2px white;
+}

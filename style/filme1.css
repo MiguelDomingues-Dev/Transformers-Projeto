@@ -2,23 +2,57 @@
 
 @font-face {
   font-family: "Transformers";
-  src: url(font/transfrm.ttf) format(truetype);
+  src: url(../font/transfrm.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
 
 *{
+  padding: 0px;
+  margin: 0px;
   font-family: "Transformers";
 }
 
 body {
+  margin: 1%;
+  padding: 50px;
   font-family: "Transformers";
-  background-attachment: fixed;
-  background-size: auto;
-  background-image: url(../img/optimus.jpg);
+  background-color: rgb(2, 115, 94);
 }
 
-.master {
-
+#inicio {
+  margin: 25px;
+  padding: 10px;
   border-radius: 10px;
+  background-image: linear-gradient(36deg, #0CF25D, #034159 80%);
+  text-align: center;
+  text-shadow: 2px 2px 3px white;
+}
+
+body > #menu {
+  display: none;
+}
+
+body:hover > #menu {
+  display: block;
+}
+
+a {
+  text-align: left;
+  height: 5px;
+  width: 20px;
+  padding: 5px;
+  margin: 3px;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 2px;
+  background-color: rgb(112, 0, 250);
+  text-decoration: none;
+  font-weight: bolder;
+  color: #034159;
+}
+#menu{
+  color: #034159;
+  margin: 10px;
+  padding: 2px;
+  
 }

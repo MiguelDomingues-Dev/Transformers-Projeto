@@ -24,7 +24,7 @@ body {
   margin: 25px;
   padding: 10px;
   border-radius: 10px;
-  background-image: linear-gradient(36deg, #0CF25D, #034159 80%);
+  background-image: linear-gradient(36deg, rgb(12, 242, 93), rgb(3, 65, 89) 80%);
   text-align: center;
   text-shadow: 2px 2px 3px white;
 }
@@ -43,16 +43,62 @@ a {
   width: 20px;
   padding: 5px;
   margin: 3px;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
   border-radius: 2px;
   background-color: rgb(112, 0, 250);
   text-decoration: none;
   font-weight: bolder;
-  color: #034159;
+  color: rgb(3, 65, 89);
 }
 #menu{
   color: #034159;
   margin: 10px;
   padding: 2px;
   
+}
+/*--section_optmus--*/
+#sessão {
+  background-image: linear-gradient(-50deg, rgb(20, 11, 2), #02735E);
+  margin: 50px;
+  box-shadow: 5px 5px 10px #034159; 
+  border-radius: 15px;
+  width: 600px
+}
+
+.name {
+  text-shadow: 2px 2px 3px black;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+.optmus {
+  border-radius: 10px;
+  margin: 15px;
+  padding: 2.5px;
+  width: 500px;
+}
+
+#sessão > .optmus {
+  display: none;
+}
+
+#sessão:hover > .optmus{
+  display: block;
+}
+/*--rodapé--*/
+#rodapé {
+  border-radius: 15px;
+  padding-top: 10px;
+  margin: 25px;
+  height: 2.5em;
+  background-color: rgb(25, 24, 24);
+  color: aliceblue;
+   text-align: center;
+  font: normal 13px "Transformers"
+}
+
+#rodapé:hover {
+ color: rgb(34, 34, 34);
+ background-color: rgb(112, 0, 250);
+ text-shadow: 1px 1px 2px white;
 }

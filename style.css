@@ -7,56 +7,137 @@
   font-style: normal;
 }
 
+:root {
+  --color01:#131a40;
+  --color1: #4e64a6;
+  --color2: #829fd9;
+  --color3: #ffffff;
+  --color4: #222222;
+  --color5: #000000;
+  --color6: #7000fa;
+  --color7: #035aa6;
+  --color8: #91bbf2;
+
+  --font-principal: "Transformers";
+  --font-padrão: "Arial", Helvetica, sans-serif;
+}
+
+* {
+  font-family: "Transformers";
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
 body {
-  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(19, 26, 64);
-  margin: 25px 35px 25px 35px;
-  padding: 10px;
+  background-color: var(--color01);
+  
 }
 
 /*---div-h1---*/
+header {
+  background-image: linear-gradient(to top, var(--color01), var(--color2));
+  text-align: center;
+}
 
 .titulo {
   font-family: "Transformers", Arial, Helvetica, sans-serif;
+  padding: 15px;
   text-align: center;
-  background-image: linear-gradient(45deg,rgb(78, 100, 166), hsl(220, 53%, 68%));
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin: 25px 35px 25px 35px;
-  text-shadow: 1px 1px 2px rgb(255, 255, 255);
-  color: rgb(34, 34, 34);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.99);
-  border-radius: 5px;
+  text-shadow: 1px 1px 2px var(--color3);
+  color: var(--color4);
+  box-shadow: 5px 5px 15px var(--color5);
+  border-bottom-left-radius: 1.1px;
+  border-bottom-right-radius: 1.1px;
+  height: 100px;
 }
 
 .titulo:hover {
-  color: rgb(112, 0, 250);
-  text-shadow: 5px 5px 10px black;
+  color: var(--color6);
+  text-shadow: 5px 5px 10px var(--color5);
 }
 
-/*---section---*/
+.menu {
+  margin: auto;
+  padding: 10px;
+  background-color: var(--color01);
+  box-shadow: 2px 2px 3px var(--color4);
+}
 
-#temas {
+.menu > a {
+  color: white;
+  padding: 5px;
+  margin-left: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 13.9px;
+  transition-duration: 0.5s;
+
+}
+
+.menu a:hover {
+  color: var(--color4);
+  background-color: var(--color8);
+}
+
+/*--Assunto_principal--*/
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--color2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.453);
+}
+
+main p {
+  line-height: 25.5px;
+  text-indent: 1.2em;
+  text-shadow: 2px 2px 3px var(--color4);
+  color: var(--color3);
+  margin: 10px 0px;
+  padding: 10px 11px;
+  text-align: justify;
+}
+/*--Conf.Intorrogaão--*/
+main #inte {
   font-weight: bold;
-  margin: 25px 35px 25px 35px;
-  padding: 2px;
+  font-size: 2em;
 }
 
+main h2 {
+  text-shadow: 1px 1px 1.1px var(--color3);
+  line-height: 25.5px;
+  text-indent: 1.2em;
+  margin: 10px 0px;
+  padding: 10px 11px;
+}
+
+.destaque {
+  line-height: 35.5px;
+  color: var(--color6);
+  text-shadow: 1.4px 1.5px 2px var(--color4);
+}
+
+main img {
+
+  width: 96.5%;
+ 
+}
+/*---section---*/
 
 .subtitulo {
   padding-bottom: 10px;
-  margin: 25px 35px 25px 35px;
-  font-family: "Transformers";
+  font-family: var(--font-principal);
   text-decoration: none;
-}
-
-.subtitulo {
   padding: 12px;
-  margin: 25px 35px 25px 35px;
   border-radius: 10px;
-  background-image: linear-gradient(45deg, #035AA6, #91BBF2);
+  background-image: linear-gradient(45deg, var(--color7), var(--color2));
 }
 .subtitulo > li {
   display: none;
@@ -65,6 +146,7 @@ body {
 .subtitulo:hover > li {
   display: block;
 }
+/*--pag 002--*/
 .buunblebee:visited {
   color: rgb(112, 0, 250);
   text-shadow: 1px 1px 2px white;
@@ -89,10 +171,10 @@ li {
 /*-rodapé-*/
 
 #rodapé {
-   border-radius: 15px;
-   padding-top: 10px;
-   margin: auto;
-   height: 2.5em;
+  border-radius: 3px;
+  padding-top: 10px;
+  margin: auto;
+  height: 2.5em;
    background-color: rgb(25, 24, 24);
    color: aliceblue;
     text-align: center;

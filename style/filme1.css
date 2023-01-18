@@ -1,16 +1,21 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Transformers";
-  src: url(../font/transfrm.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Transformers2";
+  src: url(font/Optimus.otf) format(opentype), 
+  url(font/Optimus\ Bold.otf) format(opentype),
+  url(font/Optimus\ Bold\ Italic.otf) format(opentype),
+  url(font/Optimus\ Hollow.otf) format(opentype),
+  url(font/Optimus\ Hollow\ Italic.otf) format(opentype),
+  url(font/Optimus\ Italic.otf) format(opentype);
 }
 
+
 *{
-  padding: 0px;
-  margin: 0px;
-  font-family: "Transformers";
+  font-family: "Transformers2";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -29,13 +34,6 @@ body {
   text-shadow: 2px 2px 3px white;
 }
 
-body > #menu {
-  display: none;
-}
-
-body:hover > #menu {
-  display: block;
-}
 
 a {
   text-align: left;

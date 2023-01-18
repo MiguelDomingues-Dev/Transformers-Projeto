@@ -47,7 +47,7 @@ header {
 .titulo {
   font-family: "Transformers", Arial, Helvetica, sans-serif;
   font-size: 2.345em;
-  padding: 15px;
+  padding: 20px;
   height: 100px;
   text-align: center;
   text-shadow: 1px 1px 2px var(--color3);

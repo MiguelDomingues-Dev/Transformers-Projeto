@@ -2,9 +2,12 @@
 /*---Font-Transformers---*/
 @font-face {
   font-family: "Transformers";
-  src: url(font/transfrm.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
+  src: url(font/Optimus.otf) format(opentype), 
+  url(font/Optimus\ Bold.otf) format(opentype),
+  url(font/Optimus\ Bold\ Italic.otf) format(opentype),
+  url(font/Optimus\ Hollow.otf) format(opentype),
+  url(font/Optimus\ Hollow\ Italic.otf) format(opentype),
+  url(font/Optimus\ Italic.otf) format(opentype);
 }
 
 :root {
@@ -24,6 +27,7 @@
 
 * {
   font-family: "Transformers";
+  font-weight: normal;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -43,14 +47,15 @@ header {
 
 .titulo {
   font-family: "Transformers", Arial, Helvetica, sans-serif;
+  font-size: 3em;
   padding: 15px;
+  height: 100px;
   text-align: center;
   text-shadow: 1px 1px 2px var(--color3);
   color: var(--color4);
   box-shadow: 5px 5px 15px var(--color5);
   border-bottom-left-radius: 1.1px;
   border-bottom-right-radius: 1.1px;
-  height: 100px;
 }
 
 .titulo:hover {
@@ -104,12 +109,17 @@ main p {
   padding: 10px 11px;
   text-align: justify;
 }
+
+.lista {
+  text-decoration: none;
+ 
+}
 /*--Conf.Intorrogaão--*/
 main #inte {
   font-weight: bold;
   font-size: 2em;
 }
-
+/*--config text--*/
 main h2 {
   text-shadow: 1px 1px 1.1px var(--color3);
   line-height: 25.5px;
@@ -122,6 +132,28 @@ main h2 {
   line-height: 35.5px;
   color: var(--color6);
   text-shadow: 1.4px 1.5px 2px var(--color4);
+}
+
+/*---link dentro do texto*/
+main .links {
+  color: var(--color7);
+  text-decoration: none;
+  text-shadow: 1.4px 1.5px 2px #ffffff;
+}
+
+.links:hover {
+  background-color: var(--color6);
+  color: var(--color5);
+  text-shadow:1.4px 1.5px 2px var(--color3);
+  border-radius: 3px;
+  transition: 0.5s;
+  padding: 2px;
+}
+
+
+main strong {
+  color: var(--color6);
+  text-shadow: 1.4px 1.5px 2px var(--color3);
 }
 
 main img {
@@ -145,22 +177,6 @@ main img {
 
 .subtitulo:hover > li {
   display: block;
-}
-/*--pag 002--*/
-.buunblebee:visited {
-  color: rgb(112, 0, 250);
-  text-shadow: 1px 1px 2px white;
-}
-.buunblebee:hover {
-  color: rgb(110, 141, 203);
-  text-shadow: 1px 1px 3px white;
-}
-.buunblebee {
-  margin: 10px;
-  padding: 10px;
-  font-family: "Transformers";
-  color: white;
-  text-decoration: none;
 }
 
 li {

@@ -58,6 +58,7 @@ header {
 }
 
 .titulo {
+  min-width: 230px;
 
 }
 

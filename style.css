@@ -148,6 +148,12 @@ main .links {
   padding: 2px;
 }
 
+/*--extrno site--*/
+#exeterno > .lista > .san {
+  text-decoration: none;
+  list-style-type: none;
+  list-style-position: inside;
+}
 
 main strong {
   color: var(--color6);

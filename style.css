@@ -185,14 +185,14 @@ li {
 /*-rodapé-*/
 
 #rodapé {
-  border-radius: 3px;
-  padding-top: 10px;
-  margin: auto;
-  height: 2.5em;
+   border-radius: 3px;
+   padding-top: 10px;
+   margin: auto;
+   height: 2.5em;
    background-color: rgb(25, 24, 24);
    color: aliceblue;
-    text-align: center;
-   font: normal 13px "Transformers"
+   text-align: center;
+   font: normal 19px "Transformers"
 }
 
 #rodapé:hover {
@@ -200,3 +200,51 @@ li {
   background-color: rgb(112, 0, 250);
   text-shadow: 1px 1px 2px white;
 }
+
+
+/*--icones--*/
+.icones {
+   height: 25px;
+}
+
+.icon {
+   height: 25px;
+}
+
+
+.linkun {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.linktwo {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.linkun > a > .icones:hover {
+    padding: 1.5px;
+    box-shadow: 1.4px 1.4px 2px var(--color3);
+    background-image: url(img/icon-git.png);
+    background-attachment: fixed;
+    transition: 0.8s;
+}
+
+.linktwo > a > .icon:hover {
+  padding: 1.5px;
+  box-shadow: 1.4px 1.4px 2px var(--color3);
+  background-attachment: fixed;
+    transition: 0.8s;
+}
+
+/*--link-name--*/
+.name {
+   text-decoration: none;
+   color: aliceblue;
+}
+
+  .name:hover {
+     color: rgb(34, 34, 34);
+     background-color: rgb(112, 0, 250);
+     text-shadow: 1px 1px 2px white;
+  }

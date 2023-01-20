@@ -8,50 +8,74 @@
 
 
 *{
-  font-family: "Megatron";
-  font-weight: normal;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+   font-family: "Megatron";
+   font-weight: normal;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
 :root {
-  --color01: #222222;
-  --color1: #7000fa;
-  --color3: #191818;
-  --color4: #f0f8ff;
-  --color5: #02735e;
-  --color6: #034159;
-  --color7: #0cf25d;
+   --color01: #222222;
+   --color1: #7000fa;
+   --color3: #191818;
+   --color4: #f0f8ff;
+   --color5: #02735e;
+   --color6: #034159;
+   --color7: #0cf25d;
 }
 
 body {
-  font-family: "Megatron";
-  background-color: rgb(2, 115, 94);
+   font-family: "Megatron";
+   background-color: rgb(2, 115, 94);
 }
 
 #inicio {
-  font-family: "Megatron";
-  min-width: 320px;
-  max-width: 1420px;
-  height: 120px;
-  padding-top: 20px;
-  background-image: linear-gradient(to bottom, rgb(12, 242, 93), rgb(3, 65, 89));
-  text-align: center;
-  text-shadow: 2px 2px 3px white;
+   font-family: "Megatron";
+   min-width: 320px;
+   max-width: 1420px;
+   height: 120px;
+   padding-top: 20px;
+   background-image: linear-gradient(to bottom, rgb(12,242, 93), rgb(3, 65, 89));
+   text-align: center;
+   text-shadow: 2px 2px 3px white;
 }
 
 #inicio > .titul:hover {
-  color: var(--color1);
-  text-shadow: 2px 2px 2px var(--color4);
+   color: var(--color1);
+   text-shadow: 2px 2px 2px var(--color4);
+}
+
+/*--config.Menu--*/
+nav {
+   margin: auto;
+   padding-top: 30px;
+   background-color: rgb(3, 65, 89);
+}
+
+.acesso {
+   color: var(--color3);
+   text-shadow: 1.2px 1.2px 1.5px var(--color4);
+   font-weight: bold;
+   text-decoration: none;
+   padding-left: 8px;
+}   
+
+.acesso:hover {
+  color: var(--color4);
+  text-shadow: 1.2px 1.2px 1.3px var(--color01);
+  padding-right: 8px;
+  background-color: #02735E;
+  background-attachment: fixed;
+  border-radius: 3px;
+  transition: 0.5s;
 }
 /*--Conteúdo Principal--*/
 main {
    min-width: 300px;
    max-width: 1030px;
    margin: auto;
-   margin-bottom: 30px;
-   padding-left: 20px;
+   margin-bottom: 50px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
    background-color: rgb(25, 24, 24);
@@ -59,9 +83,11 @@ main {
 /*--section_optmus--*/
 #sessão {
   background-image: linear-gradient(-50deg, rgb(20, 11, 2), #02735E);
-  margin: 50px;
+  margin-left: 20px;
   box-shadow: 5px 5px 10px #034159; 
   border-radius: 15px;
+  padding-right: 5px;
+  margin-right: 30px;
   width: 600px;
 }
 
@@ -74,19 +100,17 @@ main {
 
 .optmus {
   border-radius: 10px;
-  margin: 15px;
-  padding: 2.5px;
   width: 500px;
 }
 
-div.video {
+ #video {
   margin: 0px -20px 30px -20px;
   padding: 20px;
-  padding-bottom: 56.5%;
+  padding-bottom: 56%;
   position: relative;
 }
 
-div.video > iframe {
+ #video > iframe {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -139,7 +163,6 @@ a img {
 .like > .we:hover {
   margin-left: 4px;
   width: 30px;
- 
   transition: 0.5s;
   box-shadow: 1.3px 1.3px 1.8px var(--color4);
 }

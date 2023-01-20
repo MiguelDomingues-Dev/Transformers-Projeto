@@ -1,58 +1,60 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Transformers2";
-  src: url(font/Optimus.otf) format(opentype), 
-  url(font/Optimus\ Bold.otf) format(opentype),
-  url(font/Optimus\ Bold\ Italic.otf) format(opentype),
-  url(font/Optimus\ Hollow.otf) format(opentype),
-  url(font/Optimus\ Hollow\ Italic.otf) format(opentype),
-  url(font/Optimus\ Italic.otf) format(opentype);
+  font-family: "Megatron";
+  src: url(../html/fonts-megatron/Megatron.otf) format(opentype), url(../html/fonts-megatron/Megatron\ Condensed.otf) format(opentype), url(../html/fonts-megatron/Megatron\ Condensed\ Italic.otf) format(opentype), url(../html/fonts-megatron/Megatron\ Hollow.otf) format(opentype), url(../html/fonts-megatron/Megatron\ Hollow\ Condensed.otf) format(opentype), url(../html/fonts-megatron/Megatron\ Hollow\ Condensed\ Italic.otf) format(opentype);
 }
 
 
+
 *{
-  font-family: "Transformers2";
+  font-family: "Megatron";
+  font-weight: normal;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --color01: #222222;
+  --color1: #7000fa;
+  --color3: #191818;
+  --color4: #f0f8ff;
+  --color5: #02735e;
+  --color6: #034159;
+  --color7: #0cf25d;
+}
+
 body {
-  margin: 1%;
-  padding: 50px;
-  font-family: "Transformers";
+  font-family: "Megatron";
   background-color: rgb(2, 115, 94);
 }
 
 #inicio {
-  margin: 25px;
-  padding: 10px;
-  border-radius: 10px;
-  background-image: linear-gradient(36deg, rgb(12, 242, 93), rgb(3, 65, 89) 80%);
+  font-family: "Megatron";
+  min-width: 320px;
+  max-width: 1420px;
+  height: 120px;
+  padding-top: 20px;
+  background-image: linear-gradient(to bottom, rgb(12, 242, 93), rgb(3, 65, 89));
   text-align: center;
   text-shadow: 2px 2px 3px white;
 }
 
-
-a {
-  text-align: left;
-  height: 5px;
-  width: 20px;
-  padding: 5px;
-  margin: 3px;
-  box-shadow: 2px 2px 3px rgb(0, 0, 0);
-  border-radius: 2px;
-  background-color: rgb(112, 0, 250);
-  text-decoration: none;
-  font-weight: bolder;
-  color: rgb(3, 65, 89);
+#inicio > .titul:hover {
+  color: var(--color1);
+  text-shadow: 2px 2px 2px var(--color4);
 }
-#menu{
-  color: #034159;
-  margin: 10px;
-  padding: 2px;
-  
+/*--Conteúdo Principal--*/
+main {
+   min-width: 300px;
+   max-width: 1030px;
+   margin: auto;
+   margin-bottom: 30px;
+   padding-left: 20px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   background-color: rgb(25, 24, 24);
 }
 /*--section_optmus--*/
 #sessão {
@@ -60,7 +62,7 @@ a {
   margin: 50px;
   box-shadow: 5px 5px 10px #034159; 
   border-radius: 15px;
-  width: 600px
+  width: 600px;
 }
 
 .name {
@@ -69,6 +71,7 @@ a {
   text-align: center;
   padding: 10px;
 }
+
 .optmus {
   border-radius: 10px;
   margin: 15px;
@@ -76,27 +79,67 @@ a {
   width: 500px;
 }
 
-#sessão > .optmus {
-  display: none;
+div.video {
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 56.5%;
+  position: relative;
 }
 
-#sessão:hover > .optmus{
-  display: block;
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 /*--rodapé--*/
 #rodapé {
-  border-radius: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   padding-top: 10px;
-  margin: 25px;
+  margin: auto;
   height: 2.5em;
   background-color: rgb(25, 24, 24);
   color: aliceblue;
-   text-align: center;
-  font: normal 13px "Transformers"
+  text-align: center;
+  font: normal 19px "Megatron"
 }
 
 #rodapé:hover {
- color: rgb(34, 34, 34);
- background-color: rgb(112, 0, 250);
- text-shadow: 1px 1px 2px white;
+  color: rgb(34, 34, 34);
+  background-color: rgb(112, 0, 250);
+  text-shadow: 1px 1px 2px white;
+}
+
+a img {
+  width: 20px;
+}
+
+/*--icon-github--*/
+.like .you {
+  margin-left: 4px;
+}
+
+.like > .you:hover {
+  margin-left: 4px;
+  width: 30px;
+  background-image: url(../img/icon-git.png);
+  background-attachment: fixed;
+  transition: 0.5s;
+  box-shadow: 1.3px 1.3px 1.8px var(--color4);
+}
+
+/*--icon Youtube--*/
+
+.like .we {
+  margin-right: 4px;
+}
+
+.like > .we:hover {
+  margin-left: 4px;
+  width: 30px;
+ 
+  transition: 0.5s;
+  box-shadow: 1.3px 1.3px 1.8px var(--color4);
 }

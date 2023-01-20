@@ -142,6 +142,19 @@ a img {
   width: 20px;
 }
 
+/*--config.contact-nome--*/
+.nome {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+#rodapé > #contact > .nome:hover {
+  color: var(--color01);
+  text-shadow: 1px 1px 2px var(--color4);
+  margin: 20px;
+  transition: 0.2s;
+}
+
 /*--icon-github--*/
 .like .you {
   margin-left: 4px;

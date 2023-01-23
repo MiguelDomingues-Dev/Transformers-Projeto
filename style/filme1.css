@@ -40,7 +40,9 @@ body {
    text-align: center;
    text-shadow: 2px 2px 3px white;
 }
-
+#inicio.titul {
+  
+} u
 #inicio > .titul:hover {
    color: var(--color1);
    text-shadow: 2px 2px 2px var(--color4);
@@ -81,6 +83,8 @@ main {
    background-color: rgb(25, 24, 24);
 }
 /*--section_optmus--*/
+
+
 #sessão {
   min-width: 300px;
   max-width: 1360px;
@@ -119,6 +123,7 @@ main {
     width: 90%;
     height: 90%;
 }
+
 /*--rodapé--*/
 #rodapé {
   border-top-left-radius: 3px;

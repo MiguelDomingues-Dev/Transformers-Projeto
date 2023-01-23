@@ -45,10 +45,10 @@ header {
 }
 
 .titulo {
-  min-width: 320px;
-  max-width: 1360px;
+   min-width: 320px;
+   max-width: 1360px;
    font-family: "Transformers", Arial, Helvetica,  sans-serif;
-   font-size: 2.5em;
+   font-size: 8vw;
    text-align: center;
    text-shadow: 1px 1px 2px var(--color3);
    color: var(--color4);
@@ -63,7 +63,6 @@ header {
 }
 
 .menu {
-  margin: auto;
   padding-top: 10px;
   background-color: var(--color01);
 }
@@ -75,7 +74,7 @@ header {
   border-radius: 3px;
   text-decoration: none;
   font-weight: normal;
-  font-size: 13.9px;
+  font-size: 2.5vw;
   transition-duration: 0.5s;
 
 }
@@ -98,14 +97,14 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.453);
 }
 
-main p {
+main p { 
   line-height: 25.5px;
   text-indent: 1.2em;
+  text-align: justify;
   text-shadow: 2px 2px 3px var(--color4);
-  color: var(--color3);
   margin: 10px 0px;
   padding: 10px 11px;
-  text-align: justify;
+  color: var(--color3);
 }
 
 .lista {

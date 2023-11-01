@@ -34,265 +34,48 @@
   box-sizing: border-box;
 }
 
-body, html {
-  width: 100%;
-  height: 100%;
-}
-
-/*---div-h1---*/
-header {
-    min-width: 320px;
-    max-width: 1360px;
-    background-image: linear-gradient(to top, var(--color01), var(--color2));
-}
-
-#container, .content {
-  position: relative;
-  width: 100vw;
-  height: 80px;
-}
-
-.titulo {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    font-family: "Transformers", Arial, Helvetica,  sans-serif;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 2px var(--color3);
-    color: var(--color4);
-    border-bottom-left-radius: 1.1px;
-    border-bottom-right-radius: 1.1px;
-}
-
-.box-nav-mobile, #nav {
-  position: relative;
-}
-
-#nav {
-  display: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 47.5%;
-  width: 250px;
-  height: 250px;
-  border-bottom-left-radius: 5px;
-}
-
-ul {
-  position: relative;
-  top: 50%;
-  transform: translate(0%, -50%);
-  text-decoration: none;
-  text-align: center;
-}
-
-ul > li {
-  list-style: none;
-}
-
-ul > li > a {
-  text-decoration: none;
-  color: var(--color3);
-}
-
-  
-
-.atalho-links:hover {
-  text-decoration: underline var(--color3);
-  transition: 1s;
-}
-
-#menuBox {
-  position: absolute;
-  display: inline;
-  top: 20%;
-  transform: translate(0%, 60%);
-  left: 85.8%;
-  width: 45px;
-  height: 45px;
+#container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  cursor: pointer;
+  flex-grow: 2;
+  height: 80px;
+  width: 100%;
+  padding: 10px 25px;
+  background-image: linear-gradient(-180deg, var(--color01), var(--color1));
 }
 
-#bxMenu2 {
-  position: relative;
-  top: 50%;
-  left: 80%;
-  transform: translate(0%, 120%);
-  display: none;
-  cursor: pointer;
-}
-
-
-/*--Assunto_principal--*/
-main {
-  min-width: 250px;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 30px;
-  padding-left: 20px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: var(--color2);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.453);
-}
-
-main p { 
-  line-height: 25.5px;
-  text-indent: 1.2em;
-  text-align: justify;
-  text-shadow: 2px 2px 3px var(--color4);
-  margin: 10px 0px;
-  padding: 10px 11px;
+.titulo > h1 {
   color: var(--color3);
+  font-size: 2.5rem;
 }
 
-.lista {
-  text-decoration: none;
- 
-}
-/*--Conf.Intorrogaão--*/
-main #inte {
-  font-weight: bold;
-  font-size: 2em;
-}
-/*--config text--*/
-main h2 {
-  text-shadow: 1px 1px 1.1px var(--color3);
-  line-height: 25.5px;
-  text-indent: 1.2em;
-  margin: 10px 0px;
-  padding: 10px 11px;
+.menu {
+  display: flex;
+  gap: 0px 10px;
 }
 
-.destaque {
-  line-height: 35.5px;
-  color: var(--color6);
-  text-shadow: 1.4px 1.5px 2px var(--color4);
+.menu-desktop {
+  background-color: transparent;
+  border-color: var(--color3);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
 }
 
-/*---link dentro do texto*/
-main .links {
-  color: var(--color7);
-  text-decoration: none;
-  text-shadow: 1.4px 1.5px 2px #ffffff;
-}
-
-.links:hover {
-  background-color: var(--color6);
-  color: var(--color5);
-  text-shadow:1.4px 1.5px 2px var(--color3);
-  border-radius: 3px;
+.menu-desktop > a {
+  color: var(--color3);
+  padding: 5px;
+  font-size: 1.2rem;
   transition: 0.5s;
-  padding: 2px;
 }
 
-/*--extrno site--*/
-#exeterno > .lista > .san {
-  text-decoration: none;
-  list-style-type: none;
-  list-style-position: inside;
+.menu-desktop > a:hover {
+  color: var(--color4);
 }
 
-main strong {
-  color: var(--color6);
-  text-shadow: 1.4px 1.5px 2px var(--color3);
+main {
+  display: flex;
+  background-color: var(--color3);
+  justify-content: center;
 }
-
-main img {
-
-  width: 96.5%;
- 
-}
-/*---section---*/
-
-.subtitulo {
-  padding-bottom: 10px;
-  font-family: var(--font-principal);
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 10px;
-  background-image: linear-gradient(45deg, var(--color7), var(--color2));
-}
-.subtitulo > li {
-  display: none;
-}
-
-.subtitulo:hover > li {
-  display: block;
-}
-
-li {
-  padding: 12px;
-  margin: 10;
-}
-
-/*-rodapé-*/
-
-#rodapé {
-   border-radius: 3px;
-   padding-top: 10px;
-   margin: auto;
-   height: 2.5em;
-   background-color: rgb(25, 24, 24);
-   color: aliceblue;
-   text-align: center;
-   font: normal 19px "Transformers"
-}
-
-#rodapé:hover {
-  color: rgb(34, 34, 34);
-  background-color: rgb(112, 0, 250);
-  text-shadow: 1px 1px 2px white;
-}
-
-
-/*--icones--*/
-.icones {
-   height: 25px;
-}
-
-.icon {
-   height: 25px;
-}
-
-
-.linkun {
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.linktwo {
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.linkun > a > .icones:hover {
-    padding: 1.5px;
-    box-shadow: 1.4px 1.4px 2px var(--color3);
-    background-image: url(img/icon-git.png);
-    background-attachment: fixed;
-    transition: 0.8s;
-}
-
-.linktwo > a > .icon:hover {
-  padding: 1.5px;
-  box-shadow: 1.4px 1.4px 2px var(--color3);
-  background-attachment: fixed;
-    transition: 0.8s;
-}
-
-/*--link-name--*/
-.name {
-   text-decoration: none;
-   color: aliceblue;
-}
-
-  .name:hover {
-     color: rgb(34, 34, 34);
-     background-color: rgb(112, 0, 250);
-     text-shadow: 1px 1px 2px white;
-  }

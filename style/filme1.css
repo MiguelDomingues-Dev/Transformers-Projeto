@@ -8,26 +8,26 @@
 
 
 *{
-   font-family: "Megatron";
-   font-weight: normal;
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+  font-family: "Megatron";
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-   --color01: #222222;
-   --color1: #7000fa;
-   --color3: #191818;
-   --color4: #f0f8ff;
-   --color5: #02735e;
-   --color6: #034159;
-   --color7: #0cf25d;
+  --color01: #222222;
+  --color1: #7000fa;
+  --color3: #191818;
+  --color4: #f0f8ff;
+  --color5: #02735e;
+  --color6: #034159;
+  --color7: #0cf25d;
 }
 
 body {
-   font-family: "Megatron";
-   background-color: rgb(2, 115, 94);
+  font-family: "Megatron";
+  background-color: rgb(2, 115, 94);
 }
 
 #inicio {
@@ -44,23 +44,27 @@ body {
   
 } u
 #inicio > .titul:hover {
-   color: var(--color1);
-   text-shadow: 2px 2px 2px var(--color4);
+  color: var(--color1);
+  text-shadow: 2px 2px 2px var(--color4);
 }
 
 /*--config.Menu--*/
 nav {
-   margin: auto;
-   padding-top: 30px;
-   background-color: rgb(3, 65, 89);
+  display: flex;
+  justify-content: baseline;
+  flex-direction: row;
+  margin: auto;
+  padding-top: 30px;
+  background-color: rgb(3, 65, 89);
 }
 
 .acesso {
-   color: var(--color3);
-   text-shadow: 1.2px 1.2px 1.5px var(--color4);
-   font-weight: bold;
-   text-decoration: none;
-   padding-left: 8px;
+  display: flex;
+  color: var(--color3);
+  text-shadow: 1.2px 1.2px 1.5px var(--color4);
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 8px;
 }   
 
 .acesso:hover {
@@ -116,13 +120,6 @@ main {
   position: relative;
 }
 
- #video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
 
 /*--rodapé--*/
 #rodapé {

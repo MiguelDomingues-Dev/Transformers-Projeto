@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*---Font-Transformers---*/
 @font-face {
   font-family: "Transformers";
@@ -33,56 +34,98 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--color01);
-  
+body, html {
+  width: 100%;
+  height: 100%;
 }
 
 /*---div-h1---*/
 header {
-  background-image: linear-gradient(to top, var(--color01), var(--color2));
+    min-width: 320px;
+    max-width: 1360px;
+    background-image: linear-gradient(to top, var(--color01), var(--color2));
+}
+
+#container, .content {
+  position: relative;
+  width: 100vw;
+  height: 80px;
 }
 
 .titulo {
-   min-width: 320px;
-   max-width: 1360px;
-   font-family: "Transformers", Arial, Helvetica,  sans-serif;
-   font-size: 8vw;
-   text-align: center;
-   text-shadow: 1px 1px 2px var(--color3);
-   color: var(--color4);
-   box-shadow: 5px 5px 15px var(--color5);
-   border-bottom-left-radius: 1.1px;
-   border-bottom-right-radius: 1.1px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    font-family: "Transformers", Arial, Helvetica,  sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px var(--color3);
+    color: var(--color4);
+    border-bottom-left-radius: 1.1px;
+    border-bottom-right-radius: 1.1px;
 }
 
-.titulo:hover {
-   color: var(--color6);
-   text-shadow: 5px 5px 10px var(--color5);
+.box-nav-mobile, #nav {
+  position: relative;
 }
 
-.menu {
-  padding-top: 10px;
-  background-color: var(--color01);
+#nav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 47.5%;
+  width: 250px;
+  height: 250px;
+  border-bottom-left-radius: 5px;
 }
 
-.menu > a {
-  color: white;
-  padding: 5px;
-  margin-left: 8px;
-  border-radius: 3px;
+ul {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
   text-decoration: none;
-  font-weight: normal;
-  font-size: 2.5vw;
-  transition-duration: 0.5s;
-
+  text-align: center;
 }
 
-.menu a:hover {
-  color: var(--color4);
-  background-color: var(--color8);
+ul > li {
+  list-style: none;
 }
+
+ul > li > a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+  
+
+.atalho-links:hover {
+  text-decoration: underline var(--color3);
+  transition: 1s;
+}
+
+#menuBox {
+  position: absolute;
+  display: inline;
+  top: 20%;
+  transform: translate(0%, 60%);
+  left: 85.8%;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#bxMenu2 {
+  position: relative;
+  top: 50%;
+  left: 80%;
+  transform: translate(0%, 120%);
+  display: none;
+  cursor: pointer;
+}
+
 
 /*--Assunto_principal--*/
 main {

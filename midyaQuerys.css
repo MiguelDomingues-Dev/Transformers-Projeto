@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 728px) {
+    .box-nav-mobile {
+        display: none;
+    }
+    #nav {
+        display: block;
+        width: 768px;
+    }
+    
+    #nav > ul > li {
+        display: inline-block;
+    }
+}

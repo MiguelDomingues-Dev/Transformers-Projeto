@@ -1,68 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="midya  Querys.css">
-    <link
-      rel="shortcut icon"
-      href="icon/logotransformers-favicoon.gif"
-      type="image/gif"
-      rel="icon"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Aplicando Conhecimentos</title>
-  </head>
-  <body>
-    <header>
-      <div id="container">
-        <div class="content">
-          <div class="box-header">
-            <div class="header">
-              <div class="text-box">
-                <div class="text-titulo">
-                  <h1 class="titulo">{ Transformers }</h1>
-                </div>  
-              </div>
-              <div class="box-nav-mobile">
-                <div id="menuBox" class="material-symbols-outlined" onclick="clickMenu()">
-                  menu
-                  </div> 
-                  <div id="nav">
-                    <ul>
-                      <li><a class="atalho-links" href="#">Inicio</a></li>
-                      <li><a class="atalho-links" href="#">HQS</a></li>
-                      <li><a class="atalho-links" href="#">Contato</a></li>
-                      <li><a class="atalho-links" href="#">Edtis Transformers</a></li>
-                    </ul>
-                  </div>
-                  <div id="bxMenu2" class="material-symbols-outlined">
-                    close
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </header>
-    <div>
-        <audio preload="metadata" autoplay loop>
-          <source src="audio/Transformers OST - Optimus (128 kbps).mp3" type="audio/mp3">
-        </audio>
-    </div>
-    <main>
-      <p>
-        Transformers é uma das maiores franquias de sucesso dos cinemas. Ao
+Transformers é uma das maiores franquias de sucesso dos cinemas. Ao
         todo, são seis filmes baseados na linha de brinquedos da Hasbro. Mas bem
         longe de lembrar dos colecionáveis, Transformers coleciona sucesso de
         público e bilheteria. Mas como surgiram essas máquinas que passam de
         automóveis a robôs gigantes num piscar de olhos
         <strong id="inte">?</strong>
-      </p>
 
-      <h2>
+  <h2>
         A seguir, conheça o surgimento de
         <strong class="destaque">
           Optimus Prime, Bumblebee, Megatron e cia.
@@ -76,18 +19,11 @@
         linhas não eram muito divulgadas por parte das empresas japonesas.
         Basicamente, eram brinquedos em sua embalagem com alguma descrição sobre
         os personagens ou, na maioria dos casos, apenas ilustrações e nada mais.
-      </p>
+      </p>     
 
-      <picture class="toys">
-        <source media="(max-width: 670px)" srcset="img/ilustrationtoys-P.png" />
-        <img
-          src="img/ilustrationtoys-G.png"
-          alt="Ilustração dos Brinquedos transformers"
-        />
-      </picture>
+      img- ilustrationtoys 
 
-      <p>
-        Eis que em 1980, a <a class="links" href="#">Hasbro</a> queria lançar uma nova linha
+       Eis que em 1980, a <a class="links" href="#">Hasbro</a> queria lançar uma nova linha
         de brinquedos e por meio da maior feira de brinquedos do Japão, ela
         conheceu a <a class="links" href="#">Takara</a>. Eles fecharam contrato e a Hasbro
         passaram a ter os direitos de distribuir os brinquedos nos Estados
@@ -98,8 +34,8 @@
         as vendas, mas não se tratava de algo comum como comerciais ou anúncios
         em revistas e jornais, ela contratou a Marvel para criar histórias em
         quadrinhos.
-      </p>
-      <ul id="exeterno">
+
+         <ul id="exeterno">
         <li class="lista">
           <a class="san" href="https://www.proibidoler.com/games/analise-review-critica-transformers-campo-de-batalha/" target="_blank" rel="externa">Transformers: Campo de Batalha | Uma diversão em turnos</a>
         </li>
@@ -110,7 +46,8 @@
           >
         </li>
       </ul>
-      <p>
+
+       <p>
         <a class="links" href="#">Jim Shooter</a> (editor-chefe da Marvel à época) e
         <strong>Dennis O’Neil</strong> criaram toda a história, enquanto o
         escritor da Marvel Uk, <strong>Bob Bundiansky</strong>, criou os perfis
@@ -146,6 +83,3 @@
         <a href="https://www.youtube.com/@jray4215" target="_blank" rel="external"><img class="icon" src="img/icone YouTube.png" alt="site YouTube"></a>
       </span>
     </footer>
-    <script src="index.js"></script>
-  </body>
-</html>
